@@ -1,0 +1,217 @@
+<html>
+
+<!--thats a comment! -->
+<!-- AFTER AN ATTRIBUTE I PUT =""-->
+<!--always after ALL the attributes border and alt and src and href and name and target i put "" -->
+<!--attributes have red color-->
+<!-- <tags> -->
+<!--elements are the first letter or word of the tag -->
+
+<head>
+
+<!-- edw vazw synarthseis--> 
+
+   <title>Basics HTML</title> <!-- the title of the tab as I want to be appeared in web -->
+
+     <!--DEFAULT APPEREANCE
+      always in head part-->
+
+<style type="text/css">
+       
+        p,b {
+            color : green;
+            front-size : 10;
+            font-family : arial
+        }
+
+        h1,h2 {color : blue; text-align : center}
+
+        p.stav {color : pink ; text-decoration : underline}
+             <!-- key : value ; key2 : value2-->
+
+             <!-- a:hover {color : pink }
+             a:hover {color : red }
+             class stav-->
+
+</style>
+
+</head>
+
+<body>
+
+    <h1>Here starts the talking!</h1> <!-- h=header -->
+    <h2>Here starts the talking smaller!</h2> <!--but the letters in h2 are smaller-->
+ 
+    <p><b>blah blah</b></p> <!-- p=paragraph and kollhta-->
+    <p class="stav">blah blah blah</p> <!-- b=bold and kollhta-->
+ 
+ <!--LISTS-->
+ <!-- ul=unsorted list that browser apperas with bullet points -->
+ <!-- always together with li= listed item-->
+ 
+ <ul>
+ 
+    <li>i talk</li>
+    <li>you talk</li>
+    <li><b>he talks</b></li>
+
+</ul>
+ 
+ <!-- ol=ordered list and now the points are like 1 2 3-->
+ <ol>
+ 
+    <li>i talk</li>
+    <li>you talk</li>
+    <a href="http://www.dit.hua.gr"><li><b>he talks</b></li></a>
+
+</ol>
+ 
+<!-- emfwleymenh lista-->
+ <ol>
+   <li>
+ one
+
+<ul>
+
+ <li>one.one</li>
+ <li>one.two</li>
+ <li>one.three</li>
+ 
+    </ul>
+</li>
+   
+<li>
+    two
+
+<ul>
+
+ <li>two.one</li>
+ <li>two.two</li>
+ <li>two.three</li>
+ 
+    </ul>
+</li>
+
+<!-- telos emfwleymenhs listas-->
+
+<!--YPERSYNDESMOI-->
+
+<!-- <a> ypersyndesmos in another website or in the same text somewhere else -->
+
+<!-- target=_blank means that a new window will be opened while target=_parent is the opposite and its the default-->
+
+<p>
+<!-- the simple form of <a> ANCHOR </a> -->
+<a href="http://www.dit.hua.gr" target="_blank"> hello world </a> <!-- an http request is being sent-->
+</p>
+<!-- href is the key and after = is the value in which if i press hello world i ll be sent there -->
+
+<!-- tools < more tools < developer tools or F12 -->
+
+<!-- the second way in the same text but in different place, DUNNO FORGET # and name-->
+<p>
+<a href="#bookmark"> First bookmar named as "bookmark". </a>
+<p> blah blah </p>
+<a name="bookmark"> This is the first paragraph named as bookmark. </a>
+</p>
+
+<!-- IMAGES-->
+
+<!-- image is not necessary to end with </img> -->
+<!-- alt is the description of the image in case it wont appears to the screen-->
+<!-- copy adress -->
+
+<img alt="whats talking" src="https://tse1.mm.bing.net/th?id=OIP.A_P1ucFVFIeY4zrn5KiChwHaE7&pid=Api&P=0&w=248&h=166">
+    <p><img alt="whats talking" src="tsebjhagejeiufgeai.mm.bing.net/th?id=OIP.A_P1ucFVFIeY4zrn5KiChwHaE7&pid=Api&P=0&w=248&h=166"></p>
+
+<!--if i click on the image i ll be transfered in huas website-->
+<a href="http://www.dit.hua.gr" target="_blank"><img alt="whats talking" src="https://tse1.mm.bing.net/th?id=OIP.A_P1ucFVFIeY4zrn5KiChwHaE7&pid=Api&P=0&w=248&h=166"></a>
+
+<!-- TABLES -->
+
+<table border="1">
+<!-- vazw to border="1" gia na dhlwsw to megeuos toy plaisioy toy pinaka moy
+oso pio megalh timh toso pio megalo kai to plaisio gyrw gyrw ston pinaka-->
+
+ <!--xwrizoyme to table ana grammh, oysiastika den vazw steiles, vazw koytakia stis grammes me td
+ diaxwrizw head kai body toy table
+ tr stands for table rows
+ th stands for table headers-->
+ 
+ <thead>
+ 
+ <tr><th>What i say</th><th>What he says</th></t r>
+ 
+ </thead>
+ 
+ <tbody>
+ 
+    <tr><td>...</td></tr>
+ 
+    <tr><td>blah</td><td>blahh</td></tr>
+    <tr><td>blahhhhhhh</td></tr>
+
+      </tbody>
+
+</table>
+
+<!-- FORMS
+USERS INPUT
+http requests
+& diaxwrhstiko parametrwn-->
+
+<!--
+<form action="http://www.google.com?par1=&par2" method="GET" target="_blank">
+<form name="Register">
+
+  <input type="text" name="par1">
+  <input type="text" maxlength=8 name="par1" value="blah">
+ 
+  <input type="button" name="par2">
+  <input type="button" name="par2" value="click">
+ 
+  <input type="radio" name="par3">
+  <input type="radio" name="par3" value="true">
+ 
+  <input type="submit"> <!--name="par4", submit is default
+  <input type="cancel"> -->
+ 
+<p>
+ 
+     <form action="http://www.google.com/search" method="GET" target="_blank">
+ 
+        <input type="text" name="q">
+        <input type="submit">
+ 
+    </form>
+
+</p>
+
+<!--thats wrong because we have a post request and the request method POST is inappropriate for the URL
+
+ <form action="http://www.google.com/search" method="POST" target="_blank">
+
+   <input type="text" name="q">
+   <input type="submit" >
+ 
+  </form>
+ 
+  -->
+ 
+<!--
+<form action="http://www.google.com/search  method="GET" target="_blank">
+       <input type="radio" name="q" value="option1">
+  <input type="radio" name="q" value="option2">
+  <input type="radio" name="q" value="option3">
+  <input type="radio" name="q" value="option4">
+
+-->
+
+<!-- ekseidykeymeno color -->
+
+<p style="background-color : red ; font-size : 40">BLAH</p>
+
+
+    </body>
+
+</html>
